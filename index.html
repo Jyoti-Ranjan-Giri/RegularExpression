@@ -5,54 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RegEx</title>
-    <style>
-      .input {
-        padding: 0.5rem 4rem;
-        font-size: 2rem;
-        margin: 0.5rem;
-        border-radius: 0.5rem;
-        text-align: center;
-      }
-      p {
-        font-family: sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <form>
-      <div
-        class="container"
-        style="
-          border: 1px solid green;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          flex-direction: column;
-        "
-      >
+      <div class="container">
         <h2 style="font-family: sans-serif">New User Signup</h2>
         <div class="inputbox">
-          <input type="text" placeholder="username" class="input" />
+          <input type="text" placeholder="username" name="username" />
           <p>user name must alphanumeric and contain 5-10 characters</p>
         </div>
         <div class="inputbox">
-          <input type="email" placeholder="email@mail.com" class="input" />
+          <input type="email" placeholder="email@mail.com" name="email" />
           <p>valid email address eg. me@domainname.com</p>
         </div>
         <div class="inputbox">
-          <input type="password" placeholder="password" class="input" />
+          <input type="password" placeholder="password" name="password" />
           <p>password should be 8-20 characters</p>
         </div>
         <div class="inputbox">
-          <input type="tel" placeholder="telephone" class="input" />
+          <input type="tel" placeholder="telephone" name="telephone" />
           <p>valid phone no should be 10 digit long</p>
         </div>
         <div class="inputbox">
-          <input type="text" placeholder="profile" class="input" />
+          <input type="text" placeholder="profile" name="profile" />
           <p>must conatin lowercase and 20 characters long</p>
         </div>
       </div>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>
